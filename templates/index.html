@@ -1,329 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{url_for('static', filename='estilo.css') }}">
-    <title>PLAN DE ENTRENAMIENTO</title>
+    <title>THE GYM</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- MENU -->
-    <div class="contenedor-header">
-        <header>
-            <h1>PLAN DE ENTRENAMIENTO <span class="txtRojo">GYM</span></h1>
-            <nav id="nav">
-                <a href="#inicio" onclick="seleccionar()">inicio</a>
-                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
-                <a href="#servicios" onclick="seleccionar()">Servicios</a>
-                <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
-                <a href="#galeria" onclick="seleccionar()">Galería</a>
-                <a href="#equipo" onclick="seleccionar()">Equipo</a>
-                <a href="#contacto" onclick="seleccionar()">Contacto</a>
-            </nav>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-            <!-- Icono del menu responsive -->
-            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>                
-        </header>
-    </div>
-
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-seccion">
-            <div class="info">
-                <h2>No hay límites para lo que puedes lograr en el <span class="txtRojo">GYM</span></h2>
-                <p>Triunfar es más facil de lo que piensas!</p>
-                <a href="#nosotros" class="btn-mas">
-                    <i class="fa-solid fa-circle-chevron-down"></i>
-                </a>
-            </div>
-            <div class="opciones">
-                <div class="opcion">
-                    01.FITNESS
-                </div>
-                <div class="opcion">
-                    02.CROSSFIT
-                </div>
-                <div class="opcion">
-                    03.BOXING
-                </div>
-                <div class="opcion">
-                    04.ENDURANCE
-                </div>
-                <div class="opcion">
-                    05.YOGA
-                </div>
-                <div class="opcion">
-                    06.CARDIO
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION NOSOTROS -->
-    <section id="nosotros" class="nosotros">
-        <div class="fila">
-            <div class="col">
-                <img  src="{{url_for('static', filename='img/nostros.png')}}" />
-            </div>
-            <div class="col">
-                <div class="contenedor-titulo">
-                    <div class="numero">
-                        01
-                    </div>
-                    <div class="info">
-                        <span class="frase">LA MEJOR EXPERIENCIA</span>
-                        <h2>QUIEN SOY YO</h2>
-                    </div>
-                </div>
-                <p class="p-especial"></p>
-                <p>hola soy javier rebolledo valdivia , y soy apasionado por el gimnasio y ayudar a la gente por su cambio físico se que se puede sentir no sentirse como con su cuerpo y me hace muy feliz ver resultado en mis alumnos
-                </p>
-            </div>
-        </div>
-        <hr>
-        <div class="fila-nosotros">
-            <div class="col1">
-                <span class="frase">
-                    <span class="txtRojo"></span> 
-                </span>
-                <h2> <span class="txtRojo"></span> </h2>
-            </div>
-            <div class="col2">
-                <button>ENTRENA CONMIGO</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SERVICIOS -->
-    <section class="servicios" id="servicios">
-        <div class="contenido-seccion">
-            <div class="fila">
-                <div class="col">
-                    <div class="contenedor-titulo">
-                        <div class="numero">
-                            02
-                        </div>
-                        <div class="info">
-                            <span class="frase">LA MEJOR EXPERIENCIA SON TUS CAMBIOS</span>
-                            <h2>TE AYUDO</h2>
-                        </div>
-                    </div>
-                    <p class="p-especial"></p>
-                    <p></p>
-                </div>
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/servicios.png')}}" />
-                </div>
-            </div>
-        </div>
-        <div class="info-servicios">
-            <table>
-                <tr>
-                    <td>
-                        <i class="fa-solid fa-person-walking"></i>
-                        <h3><span class="txtRojo">CAMINAR </span> </h3>
-                        <p>Caminar aumenta la resistencia a los esfuerzos, a cansarnos menos y más tarde</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-dumbbell"></i>
-                        <h3><span class="txtRojo">LEVANTAR PESO HACE QUE </span> de Crossfit</h3>
-                        <p>Trabaja todos los músculos principales, incluyendo el abdomen, las caderas, las piernas, el pecho, la espalda, los hombros y los brazos</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-mitten"></i>
-                        <h3><span class="txtRojo">EL BOXEO </span> </h3>
-                        <p>El boxeo, al ser un deporte de alto impacto, ayuda a mejorar tu capacidad aeróbica y tu resistencia anaeróbica. Esto supone, además, un incremento del volumen de ventilación pulmonar que reduce la presión arterial y, en consecuencia, el riesgo de padecer una enfermedad cardiovascular</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fa-solid fa-clock"></i>
-                        <h3><span class="txtRojo">EL TIEMPO DEL ENTRENAMIENTO </span> </h3>
-                        <p>Objetivo Salud: La OMS recomienda para un adulto sano, 30 minutos de ejercicio moderado como mínimo 5 días a la semana, en total 150 minutos a la semana. Si no has hecho ejercicio en tu vida, hay que empezar incluso con menos para ir generando un buen hábito</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-heart-circle-bolt"></i>
-                        <h3><span class="txtRojo">CARDIO </span> </h3>
-                        <p>Los ejercicios cardiovasculares, también conocidos como cardio, son aquellos ejercicios que se caracterizan por elevar la frecuencia cardíaca y la respiración para mejorar nuestra resistencia. Consiste en trabajar grandes grupos musculares al mismo tiempo y de forma constante y repetida.</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-bicycle"></i>
-                        <h3><span class="txtRojo">CICLISMO </span> </h3>
-                        <p>El ciclismo es el deporte que se desarrolla sobre una bicicleta. De acuerdo a sus características, existen diferentes modalidades o especialidades de ciclismo. Se conoce como ciclismo de competición a la disciplina que consiste en tratar de recorrer una cierta distancia en el menor tiempo posible.</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <!-- SECCION COMODIDADES -->
-    <section id="comodidades" class="comodidades">
-        <div class="fila">
-            <div class="col">
-                <img  src="{{url_for('static', filename='img/nosotros.png')}}" />
-            </div>
-            <div class="col">
-                <div class="contenedor-titulo">
-                    <div class="numero">
-                        03
-                    </div>
-                    <div class="info">
-                        <span class="frase">LA MEJOR EXPERIENCIA</span>
-                        <h2>SABES QUE ES LO QUE QUIERES A QUI TE AYUDUDO</h2>
-                    </div>
-                </div>
-                <p class="p-especial">La única manera de hacer un gran trabajo es amar lo que haces.</p>
-                <ul>
-                    <li><span>BAJAR DE PESO</span> Bajar de peso significa reducir la cantidad de masa corporal total. Esto generalmente implica la pérdida de grasa corporal, aunque también puede incluir la pérdida de agua y masa muscular</li>
-                    <li><span>MANTENER UN ESTILO DE VIDA SALUDABLE</span> Mantener un estilo de vida saludable significa adoptar hábitos que promuevan el bienestar físico, mental y emocional a largo plazo. Esto incluye una alimentación equilibrada, ejercicio regular, descanso adecuado, manejo del estrés y evitar conductas perjudiciales como el consumo excesivo de alcohol y el tabaquismo. El objetivo es mejorar la calidad de vida y prevenir enfermedades.</li>
-                    <li><span>GANAR MASA MUSCULAR</span> Ganar masa muscular significa aumentar el tamaño y la fuerza de los músculos del cuerpo. Esto se logra a través de entrenamientos de resistencia como levantamiento de pesas, junto</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION GALERIA -->
-    <section class="galeria" id="galeria">
-        <div class="contenido-seccion">
-            <div class="contenedor-titulo">
-                <div class="numero">
-                    04
-                </div>
-                <div class="info">
-                    <span class="frase">LA MEJOR EXPERIENCIA</span>
-                    <h2>GALERIA</h2>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/f1.png')}}" />
-                </div>
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/f2.png')}}" />
-                </div>
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/f3.png')}}" />
-                </div>
-            </div>
-            <div class="fila">
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/f4.png')}}" />
-                </div>
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/f5.png')}}" />
-                </div>
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/f6.png')}}" />
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- SECCION EQUIPO -->
-    <section class="equipo" id="equipo">
-        <div class="contenido-seccion">
-            <div class="contenedor-titulo">
-                <div class="numero">
-                    05
-                </div>
-                <div class="info">
-                    <span class="frase">LA MEJOR EXPERIENCIA</span>
-                    <h2>CUAL ES TU OBJETIVO</h2>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/e1.png')}}" />
-                    <div class="info">
-                        <h2>BAJAR DE PESO</h2>
-                        <p>Fitness - Pilates - Yoga</p>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/e2.png')}}" />
-                    <div class="info">
-                        <h2>MANTENER UN ESTILO DE VIDA SALUDABLE</h2>
-                        <p>Fitness - Pilates - Yoga</p>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <img  src="{{url_for('static', filename='img/e3.png')}}" />
-                    <div class="info">
-                        <h2>GANAR MASA MUSCULAR</h2>
-                        <p>Fitness - Pilates - Yoga</p>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section class="contacto" id="contacto">
-        <div class="contenido-seccion">
-            <div class="contenedor-titulo">
-                <div class="numero">
-                    06
-                </div>
-                <div class="info">
-                    <span class="frase">LA MEJOR EXPERIENCIA</span>
-                    <h2>CONTACTATE CONMIGO</h2>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="col">
-                    <input type="text" placeholder="Ingrese Email">
-                </div>
-                <div class="col">
-                    <input type="text" placeholder="Ingrese Nombre">
-                </div>
-            </div>
-            <div class="mensaje">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el Mensaje por que quieres cambiar tu fisico"></textarea>
-                <button>Enviar Mensaje</button>
-            </div>
-            <div class="fila-datos">
-                <div class="col">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Av. Américo Vespucio Nº 2500, Local 13 - Cerrillos Santiago, Región Metropolitana - 9220039
-                </div>
-                <div class="col">
-                    <i class="fa-solid fa-phone"></i>
-                    2664 - 456788
-                </div>
-                <div class="col">
-                    <i class="fa-regular fa-clock"></i>
-                    Lunes a Sábado, 8:00h - 20:00h
-                </div>
-            </div>
-        </div>
-
-    </section>
     <script>
         window.onload =()=>{
         document.getElementById('proposito').addEventListener('change', function() {
@@ -353,56 +39,362 @@
             .then(data => {
                 ejercicios=data
                 console.log(ejercicios)
-            })
-            //fetch trae la informacion de la api de forma asincrona, al trabaajar con
-            //sitios no reactivos, se pone intervalo de tiempo que permita la asincronia
-            setTimeout(()=>{
-                output.innerHTML =`
+                output.innerHTML = `
                     <h3>Alimentos Recomendados:</h3>
-                    <ul>${alimentos.map(alimento => <li>${alimento}</li>).join('')}</ul>
+                    <ul>${alimentos.map(alimento => `<li>${alimento}</li>`).join('')}</ul>
                     <h3>Ejercicios Recomendados:</h3>
-                    <ul>${ejercicios.map(ejercicio => <li>${ejercicio}</li>).join('')}</ul>
-               `
-                    ;
-            },2000)
-
+                    <ul>${ejercicios.map(ejercicio => `<li>${ejercicio}</li>`).join('')}</ul> 
+                    `;
+            })
+    
+            
     });
         }
     </script>
-    <div class="container">
-        <h1>Selecciona tu propósito</h1>
-        <select id="proposito">
-            <option value="">Seleccione...</option>
-            <option value="perder">Bajar de peso</option>
-            <option value="ganar">Ganar masa muscular</option>
-            <option value="mantener">Mantener estilo de vida saludable</option>
-        </select>
-        <div class="output">
-            <h2>Recomendaciones:</h2>
-            <div id="recomendaciones">
+<div class="contenedor-header">
+    <header>
+        <h1>PLAN DE ENTRENAMIENTO <span class="txtRojo">GYM</span></h1>
+        <nav id="nav">
+            <a href="#inicio" onclick="seleccionar()">inicio</a>
+            <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
+            <a href="#servicios" onclick="seleccionar()">Servicios</a>
+            <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
+            <a href="#galeria" onclick="seleccionar()">Galería</a>
+            <a href="#equipo" onclick="seleccionar()">Equipo</a>
+            <a href="#contacto" onclick="seleccionar()">Contacto</a>
+        </nav>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <!-- Icono del menu responsive -->
+        <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>                
+    </header>
+</div>
+
+<!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+    <div class="contenido-seccion">
+        <div class="info">
+            <h2>No hay límites para lo que puedes lograr en el <span class="txtRojo">GYM</span></h2>
+            <p>Triunfar es más facil de lo que piensas!</p>
+            <a href="#nosotros" class="btn-mas">
+                <i class="fa-solid fa-circle-chevron-down"></i>
+            </a>
+        </div>
+        <div class="opciones">
+            <div class="opcion">
+                01.FITNESS
+            </div>
+            <div class="opcion">
+                02.CROSSFIT
+            </div>
+            <div class="opcion">
+                03.BOXING
+            </div>
+            <div class="opcion">
+                04.ENDURANCE
+            </div>
+            <div class="opcion">
+                05.YOGA
+            </div>
+            <div class="opcion">
+                06.CARDIO
             </div>
         </div>
     </div>
-    
-    <footer>
-        <div class="info">
-            <p>2024 - <span class="txtRojo">PLAN DE ENTRENAMIENTO</span> </p>
-            <div class="redes">
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
+</section>
+
+ <!-- SECCION NOSOTROS -->
+ <section id="nosotros" class="nosotros">
+    <div class="fila">
+        <div class="col">
+            <img  src="{{url_for('static', filename='img/nosotros.png')}}" />
+        </div>
+        <div class="col">
+            <div class="contenedor-titulo">
+                <div class="numero">
+                    01
+                </div>
+                <div class="info">
+                    <span class="frase">LA MEJOR EXPERIENCIA</span>
+                    <h2>QUIEN SOY YO</h2>
+                </div>
+            </div>
+            <p class="p-especial"></p>
+            <p>Hola soy Javier Rebolledo Valdivia , apasionado por el gimnasio y ayudar a la gente por su cambio físico se que se puede sentir no sentirse como con su cuerpo y me hace muy feliz ver resultado en mis alumnos
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="fila-nosotros">
+        <div class="col1">
+            <span class="frase">
+                <span class="txtRojo"></span> 
+            </span>
+            <h2> <span class="txtRojo"></span> </h2>
+        </div>
+        <div class="col2">
+            <button>ENTRENA CONMIGO</button>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION SERVICIOS -->
+<section class="servicios" id="servicios">
+    <div class="contenido-seccion">
+        <div class="fila">
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">
+                        02
+                    </div>
+                    <div class="info">
+                        <span class="frase">LA MEJOR EXPERIENCIA SON TUS CAMBIOS</span>
+                        <h2>TE AYUDO</h2>
+                    </div>
+                </div>
+                <p class="p-especial"></p>
+                <p></p>
+            </div>
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/servicios.png')}}" />
             </div>
         </div>
-    </footer>
-    <script src="{{url_for('static',filename='app.js')}}"></script>
+    </div>
+    <div class="info-servicios">
+        <table>
+            <tr>
+                <td>
+                    <i class="fa-solid fa-person-walking"></i>
+                    <h3><span class="txtRojo">CAMINAR </span> </h3>
+                    <p>Caminar aumenta la resistencia a los esfuerzos, a cansarnos menos y más tarde</p>
+                </td>
+                <td>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h3><span class="txtRojo">LEVANTAR PESO HACE QUE </span> de Crossfit</h3>
+                    <p>Trabaja todos los músculos principales, incluyendo el abdomen, las caderas, las piernas, el pecho, la espalda, los hombros y los brazos</p>
+                </td>
+                <td>
+                    <i class="fa-solid fa-mitten"></i>
+                    <h3><span class="txtRojo">EL BOXEO </span> </h3>
+                    <p>El boxeo, al ser un deporte de alto impacto, ayuda a mejorar tu capacidad aeróbica y tu resistencia anaeróbica. Esto supone, además, un incremento del volumen de ventilación pulmonar que reduce la presión arterial y, en consecuencia, el riesgo de padecer una enfermedad cardiovascular</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="fa-solid fa-clock"></i>
+                    <h3><span class="txtRojo">EL TIEMPO DEL ENTRENAMIENTO </span> </h3>
+                    <p>Objetivo Salud: La OMS recomienda para un adulto sano, 30 minutos de ejercicio moderado como mínimo 5 días a la semana, en total 150 minutos a la semana. Si no has hecho ejercicio en tu vida, hay que empezar incluso con menos para ir generando un buen hábito</p>
+                </td>
+                <td>
+                    <i class="fa-solid fa-heart-circle-bolt"></i>
+                    <h3><span class="txtRojo">CARDIO </span> </h3>
+                    <p>Los ejercicios cardiovasculares, también conocidos como cardio, son aquellos ejercicios que se caracterizan por elevar la frecuencia cardíaca y la respiración para mejorar nuestra resistencia. Consiste en trabajar grandes grupos musculares al mismo tiempo y de forma constante y repetida.</p>
+                </td>
+                <td>
+                    <i class="fa-solid fa-bicycle"></i>
+                    <h3><span class="txtRojo">CICLISMO </span> </h3>
+                    <p>El ciclismo es el deporte que se desarrolla sobre una bicicleta. De acuerdo a sus características, existen diferentes modalidades o especialidades de ciclismo. Se conoce como ciclismo de competición a la disciplina que consiste en tratar de recorrer una cierta distancia en el menor tiempo posible.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- SECCION COMODIDADES -->
+<section id="comodidades" class="comodidades">
+    <div class="fila">
+        <div class="col">
+            <img  src="{{url_for('static', filename='img/nosotros.png')}}" />
+        </div>
+        <div class="col">
+            <div class="contenedor-titulo">
+                <div class="numero">
+                    03
+                </div>
+                <div class="info">
+                    <span class="frase">LA MEJOR EXPERIENCIA</span>
+                    <h2>SELECCIONA TU PROPÓSITO</h2>
+                </div>
+            </div>
+            <p class="p-especial">CONOCE CUÁL SERÍA LA EXPECTATIVA DE EJERCICIOS EN FUNCIÓN DE TU PROPÓSITO CON NOSOTROS.</p>
+            <ul>
+                <li><span>ADVERTENCIA</span> Esto es un plan estándar, requieres de nuestra evaluación inicial con nuestros nutricionistas y entrenadores para tu plan personalizado</li>
+            </ul>
+            <div class="container">
+                <h1>¿Cuál es tu propósito?</h1>
+
+                <select id="proposito"class='select-css'>
+                    <option value="">Seleccione...</option>
+                    <option value="perder">Bajar de peso</option>
+                    <option value="ganar">Ganar masa muscular</option>
+                    <option value="mantener">Mantener estilo de vida saludable</option>
+                </select>
+                <div class="output">
+                    
+                    <div id="recomendaciones">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- SECCION GALERIA -->
+ <section class="galeria" id="galeria">
+    <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+            <div class="numero">
+                04
+            </div>
+            <div class="info">
+                <span class="frase">LA MEJOR EXPERIENCIA</span>
+                <h2>GALERIA</h2>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/f1.png')}}" />
+            </div>
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/f2.png')}}" />
+            </div>
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/f3.png')}}" />
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/f4.png')}}" />
+            </div>
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/f5.png')}}" />
+            </div>
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/f6.png')}}" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION EQUIPO -->
+<section class="equipo" id="equipo">
+    <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+            <div class="numero">
+                05
+            </div>
+            <div class="info">
+                <span class="frase">LA MEJOR EXPERIENCIA</span>
+                <h2>CUAL ES TU OBJETIVO</h2>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/e1.png')}}" />
+                <div class="info">
+                    <h2>BAJAR DE PESO</h2>
+                    <p>Fitness - Pilates - Yoga</p>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/e2.png')}}" />
+                <div class="info">
+                    <h2>MANTENER UN ESTILO DE VIDA SALUDABLE</h2>
+                    <p>Fitness - Pilates - Yoga</p>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <img  src="{{url_for('static', filename='img/e3.png')}}" />
+                <div class="info">
+                    <h2>GANAR MASA MUSCULAR</h2>
+                    <p>Fitness - Pilates - Yoga</p>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECCION CONTACTO -->
+<section class="contacto" id="contacto">
+    <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+            <div class="numero">
+                06
+            </div>
+            <div class="info">
+                <span class="frase">LA MEJOR EXPERIENCIA</span>
+                <h2>CONTACTATE CONMIGO</h2>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <input type="text" placeholder="Ingrese Email">
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Ingrese Nombre">
+            </div>
+        </div>
+        <div class="mensaje">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el Mensaje por que quieres cambiar tu fisico"></textarea>
+            <button>Enviar Mensaje</button>
+        </div>
+        <div class="fila-datos">
+            <div class="col">
+                <i class="fa-solid fa-location-dot"></i>
+                Av. Américo Vespucio Nº 2500, Local 13 - Cerrillos Santiago, Región Metropolitana - 9220039
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-phone"></i>
+                2664 - 456788
+            </div>
+            <div class="col">
+                <i class="fa-regular fa-clock"></i>
+                Lunes a Sábado, 8:00h - 20:00h
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="info">
+        <p>2024 - <span class="txtRojo">PLAN DE ENTRENAMIENTO</span> </p>
+        <div class="redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
